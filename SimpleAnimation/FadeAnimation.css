@@ -1,0 +1,33 @@
+div h1 {
+    text-align: center;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    position:relative;
+    top: 100px;
+    left:100px;
+    background-color: rgb(115, 0, 255);
+    transition: 3s ease-in-out;
+    /* transition: 3s steps(6, end); */
+}
+#box p{
+    color: rgb(115, 0, 255);
+    top: 50%;
+    align-self: center;
+}
+
+.fade-in:hover {
+    animation: fade-in 2s linear infinite;
+  }
+  @keyframes fade-in {
+    from { opacity: 0;
+        height: 100px;
+        width: 100px;
+    }
+    to { opacity: 1; 
+        height: 200px;
+        width: 200px;
+    }
+  }

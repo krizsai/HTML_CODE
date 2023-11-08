@@ -1,0 +1,57 @@
+/* 
+.three{
+    background-color: palevioletred;
+    transform: rotateY(-90deg) translateZ(-100px) translateX(100px);
+} */
+
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+    transition: 10s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 100%;
+    transform: rotateX(45deg) rotateY(45deg) rotate(45deg);
+}
+
+.cube:hover{
+    transform: rotateX(-135deg) rotateZ(-135deg);
+}
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: all 1s;
+}
+
+.one{
+    background-color: aqua;
+}
+
+.two{
+    background-color: black;
+    transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+}
+
+.three{
+    background-color: blue;
+    transform: rotateY(-90deg) translateZ(-100px) translateX(100px);
+}
+
+.four{
+    background-color: red;
+    transform: rotateX(90deg) translateZ(100px) translateY(100px);
+}
+
+.five{
+    background-color: burlywood;
+    transform: rotateZ(90deg) translateZ(200px);
+}
+
+.six{
+    background-color: pink;
+    transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+}
